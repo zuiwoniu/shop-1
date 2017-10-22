@@ -29,6 +29,16 @@ public class userAction extends ActionSupport implements ModelDriven<SUsers>{
 		}
 		
 	}
+	
+public String delUser(){
+		if (userService.delUser()) {
+			return "list";
+		} else {
+			this.addActionError("É¾³ý¿Í»§Ê§°Ü");
+			return INPUT;
+		}
+		
+	}
 	@Override
 	public SUsers getModel() {
 		// TODO Auto-generated method stub
