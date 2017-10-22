@@ -40,5 +40,29 @@ public class userAction extends ActionSupport implements ModelDriven<SUsers>{
 	public void setUser(SUsers user) {
 		this.user = user;
 	}
+	public IUserService getUserService() {
+		return userService;
+	}
+	public void setUserService(IUserService userService) {
+		this.userService = userService;
+	}
+	public List<SUsers> getUsers() {
+		return users;
+	}
+	public void setUsers(List<SUsers> users) {
+		this.users = users;
+	}
+	public PageModel getPageModel() {
+		return pageModel;
+	}
+	public void setPageModel(PageModel pageModel) {
+		this.pageModel = pageModel;
+	}
+	public PageBean getPage() {
+		return page;
+	}
+	public void setPage(PageBean page) {
+		this.page = page;
+	}
 
 }
