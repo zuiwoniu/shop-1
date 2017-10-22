@@ -12,5 +12,11 @@ public class userAction extends ActionSupport implements ModelDriven<SUsers>{
 		// TODO Auto-generated method stub
 		return user;
 	}
+	public SUsers getUser() {
+		return user;
+	}
+	public void setUser(SUsers user) {
+		this.user = user;
+	}
 
 }
